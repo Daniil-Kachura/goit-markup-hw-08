@@ -1,0 +1,18 @@
+.header {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--hover-color);
+}
+.logo__end {
+  color: var(--active-btn-text);
+}

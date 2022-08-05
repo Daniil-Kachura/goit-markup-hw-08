@@ -1,0 +1,36 @@
+.peculiarities-list {
+  display: flex;
+  align-items: center;
+
+  & .peculiarities-list__item + .peculiarities-list__item {
+    margin-left: 30px;
+  }
+}
+.peculiarities-list__bg-logo {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--button-color-style);
+  border-radius: 4px;
+}
+
+.peculiarities-list__logo {
+  width: 70px;
+  height: 70px;
+
+  margin: 25px 100px;
+}
+
+.peculiarities-title {
+  margin-bottom: 10px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.peculiarities-text {
+  line-height: 1.71;
+  color: var(--mail-tel-color);
+}

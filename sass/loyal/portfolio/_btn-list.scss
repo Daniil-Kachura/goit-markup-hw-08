@@ -1,0 +1,44 @@
+.btn-list {
+  display: flex;
+
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-item {
+  & + & {
+    margin-left: 8px;
+  }
+
+  &:nth-last-child(-n + 1) {
+    margin-right: 0;
+  }
+}
+
+.style-button {
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  background-color: var(--button-color-style);
+  color: var(--text-color);
+  cursor: pointer;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px var(--boxshadov-clor1),
+      0px 1px 2px var(--boxshadov-clor2), 0px 2px 2px var(--boxshadov-clor3);
+
+    color: var(--background-color);
+    background-color: var(--hover-color);
+  }
+}
+
+.active-btn {
+  background-color: var(--hover-color);
+  color: var(--background-color);
+}
