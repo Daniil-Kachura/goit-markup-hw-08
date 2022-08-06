@@ -184,15 +184,21 @@ body {
   .header__navigation {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
 }
 
 .navigavion__list {
   display: flex;
-  margin-left: 95px;
+  margin: auto 85px;
 }
 .navigavion__list :hover {
   color: var(--hover-color);
+}
+@media screen and (min-width: 1200px) {
+  .navigavion__list {
+    margin-left: 95px;
+  }
 }
 
 .navigavion__item + .navigavion__item {
@@ -273,19 +279,28 @@ body {
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
   }
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    gap: 50px;
+  }
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--mail-tel-color);
   font-weight: 500;
   line-height: 1.14;
@@ -293,6 +308,12 @@ body {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--hover-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -333,10 +354,9 @@ body {
   max-width: 360px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero-title {
     font-weight: 900;
-    font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
@@ -631,17 +651,60 @@ body {
 
 .container-box {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .container-box {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: start;
+    gap: 0;
+  }
 }
 
 .container-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    width: 231px;
+    text-align: start;
+  }
+}
+
+.auth-footer {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .auth-footer {
+    width: 231px;
+    text-align: start;
+  }
 }
 
 .logo-footer,
@@ -654,7 +717,7 @@ body {
   display: block;
 }
 
-.auth-footer .footer-item + .footer-item {
+.footer-item + .footer-item {
   margin-top: 9px;
 }
 
@@ -667,7 +730,13 @@ body {
 }
 
 .link-footer {
-  margin-left: 70px;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .link-footer {
+    margin-left: 70px;
+  }
 }
 
 .social-list-footer {
@@ -699,15 +768,18 @@ body {
 
 .btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-
-.btn-item + .btn-item {
-  margin-left: 8px;
-}
-.btn-item:nth-last-child(-n+1) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+  }
 }
 
 .style-button {
@@ -737,11 +809,27 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
 .card-item {
-  width: 370px;
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -756,6 +844,16 @@ body {
 }
 .card-item:hover .project-text {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .card-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-item {
+    width: 370px;
+  }
 }
 
 .test {
@@ -803,32 +901,55 @@ body {
 }
 
 .test3 {
-  flex-direction: row;
-  justify-content: baseline;
-  padding-left: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .test3 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .test3 {
+    flex-direction: column;
+    justify-content: baseline;
+    margin-left: auto;
+  }
 }
 
 .sub-title {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--background-color);
 }
-
-.label-footer {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+@media screen and (min-width: 1200px) {
+  .sub-title {
+    text-align: start;
+  }
 }
 
 .mail-label {
-  width: 358px;
   height: 50px;
-  border: 0;
+  width: 450px;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
   background-color: transparent;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.mail-label:focus {
+  border-color: var(--hover-color);
+}
+@media screen and (min-width: 1200px) {
+  .mail-label {
+    width: 358px;
+  }
 }
 
 .btn-footer {
@@ -841,7 +962,7 @@ body {
   border: 0;
   background-color: var(--hover-color);
   border-radius: 4px;
-  margin-left: 12px;
+  margin: 0 auto;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
@@ -849,9 +970,22 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--background-color-btn);
 }
+@media screen and (min-width: 1200px) {
+  .btn-footer {
+    margin: 0 0 0 12px;
+  }
+}
 
 .box-footer {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .box-footer {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 .mail-label,
@@ -868,7 +1002,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .backdrop {

@@ -4,15 +4,19 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
 }
 
 .navigavion__list {
   display: flex;
-  margin-left: 95px;
+  margin: auto 85px;
 
   & :hover {
     color: var(--hover-color);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 95px;
   }
 }
 

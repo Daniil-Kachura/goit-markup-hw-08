@@ -1,18 +1,27 @@
 .btn-list {
   display: flex;
+  margin-bottom: 40px;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.btn-item {
-  & + & {
-    margin-left: 8px;
-  }
+  @media screen and (min-width: 768px) {
+    display: flex;
 
-  &:nth-last-child(-n + 1) {
-    margin-right: 0;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
   }
 }
+// .btn-item {
+//   & + & {
+//     margin-left: 8px;
+//   }
+
+//   &:nth-last-child(-n + 1) {
+//     margin-right: 0;
+//   }
+// }
 
 .style-button {
   padding: 6px 22px;

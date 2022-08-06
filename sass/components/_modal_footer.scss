@@ -1,92 +1,110 @@
 .test3 {
-    flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
     justify-content: baseline;
-    padding-left: 93px;
+    margin-left: auto;
+  }
 }
 
 .sub-title {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
 
-    font-size: 14px;
-    text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
 
-    color: var(--background-color);
-}
+  color: var(--background-color);
 
-.label-footer {
-
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .mail-label {
+  height: 50px;
+
+  width: 450px;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: transparent;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &:focus {
+    border-color: var(--hover-color);
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 358px;
-    height: 50px;
-
-
-    border: 0;
-
-
-    background-color: transparent;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-
+  }
 }
-
 
 .btn-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  background-color: var(--hover-color);
+  border-radius: 4px;
+  margin: 0 auto;
 
-    width: 200px;
-    height: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 0;
-    background-color: var(--hover-color);
-    border-radius: 4px;
-    margin-left: 12px;
+    background-color: var(--background-color-btn);
+  }
 
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
-
-    &:hover,
-        &:focus {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            background-color: var(--background-color-btn);
-        }
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 12px;
+  }
 }
 
-
-
-
 .box-footer {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 .mail-label,
 .btn-footer {
-
-    padding: 16px;
-    font-family: inherit;
-    font-size: inherit;
+  padding: 16px;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .text-btn-footer {
+  font-weight: 700;
+  font-size: 16px;
 
-    font-weight: 700;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    color: #FFFFFF;
+  color: #ffffff;
 }
