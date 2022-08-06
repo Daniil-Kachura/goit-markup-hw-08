@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <!--Линки -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +25,18 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo__end">Studio</span></a
           >
+          <button class="mobile-nav" type="button">
+            <svg class="mobile-nav__icon" width="40px" height="40px">
+              <use
+                class="mobile-nav__icon-menu"
+                href="./images/sprite.svg#mobile-icon"
+              ></use>
+              <use
+                class="mobile-nav__icon-close"
+                href="./images/sprite.svg#mobile-icon-x"
+              ></use>
+            </svg>
+          </button>
           <nav class="header__navigation">
             <ul class="navigavion__list">
               <li class="navigavion__item">
@@ -131,7 +144,7 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="section">
+      <section class="section work">
         <div class="container">
           <h2 class="section-titel">Чем мы занимаемся</h2>
           <ul class="style-work-list">
@@ -487,7 +500,7 @@
       </section>
     </main>
     <!-- футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="container-box">
           <div class="container-footer">
@@ -572,10 +585,10 @@
             </ul>
           </div>
           <div class="test3">
-            <form>
-              <!-- може бути заголовком типу h2 та міститися над формою -->
+            <form> -->
+    <!-- може бути заголовком типу h2 та міститися над формою -->
 
-              <b class="sub-title">Подпишитесь на рассылку</b>
+    <!-- <b class="sub-title">Подпишитесь на рассылку</b>
               <div class="box-footer">
                 <label for="email" class="label-footer">
                   <input
@@ -598,9 +611,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
 
@@ -685,7 +698,7 @@
           </svg>
         </button>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
     <!-- Скрипт для просмотра данных отправки в "console": -->

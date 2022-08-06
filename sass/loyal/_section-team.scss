@@ -4,18 +4,28 @@
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .team-item {
-  width: 270px;
+  width: 100%;
   background-color: var(--background-color);
 
   box-shadow: 0px 1px 3px var(--boxshadov-clor1),
     0px 1px 1px var(--boxshadov-clor2), 0px 2px 1px var(--boxshadov-clor3);
   border-radius: 0px 0px 4px 4px;
 
-  .team-list & + & {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
   }
 }
 

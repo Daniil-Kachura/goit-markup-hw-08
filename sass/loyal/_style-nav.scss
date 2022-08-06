@@ -1,6 +1,10 @@
 .header__navigation {
-  display: flex;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigavion__list {

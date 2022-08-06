@@ -1,10 +1,29 @@
 .header {
   background-color: var(--background-color);
   border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
+
+.mobile-nav {
+  display: inline-flex;
+
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .header-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .logo {
