@@ -17,7 +17,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/section1/bagraund-sm.jpg);
+    url(../images/section1/bagraund-sm.jpg);
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,7 +37,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/section1/bagraund-sm@2x.jpg);
+      url(../images/section1/bagraund-sm@2x.jpg);
   }
 }
 
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/section1/bagraund-md.jpg);
+      url(../images/section1/bagraund-md.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -59,7 +59,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/section1/bagraund-md@2x.jpg);
+        url(../images/section1/bagraund-md@2x.jpg);
     }
   }
 }
@@ -71,7 +71,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/section1/bagraund-lg.jpg);
+      url(../images/section1/bagraund-lg.jpg);
 
     padding: 200px 0;
     background-size: cover;
@@ -85,7 +85,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/section1/bagraund-lg@2x.jpg);
+        url(../images/section1/bagraund-lg@2x.jpg);
 
       padding: 200px 0;
       background-size: cover;
