@@ -1205,6 +1205,8 @@ textarea::placeholder {
   color: var(--mail-tel-color);
   cursor: pointer;
   user-select: none;
+  text-underline-position: under;
+  min-width: max-content;
 }
 
 .chek {
@@ -1254,11 +1256,6 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.test123 {
-  text-underline-position: under;
-  min-width: max-content;
-}
-
 .label-txt {
   font-weight: 400;
   font-size: 12px;
@@ -1269,8 +1266,6 @@ textarea::placeholder {
 
 .licence-link {
   text-decoration: underline;
-  font-size: 14px;
-  letter-spacing: 0.03em;
   color: var(--hover-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
