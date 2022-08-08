@@ -1261,7 +1261,7 @@ textarea::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--mail-tel-color);
 }
 
 .licence-link {
@@ -1290,7 +1290,7 @@ textarea::placeholder {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  background: #2196f3;
+  background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
