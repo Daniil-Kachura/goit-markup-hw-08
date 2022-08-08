@@ -5,14 +5,25 @@
 
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  width: 96%;
+  height: 96%;
+  overflow: auto;
   padding: 40px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  max-width: 450px;
+  max-height: 609px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .form {
@@ -33,7 +44,7 @@
   font-size: 20px;
 
   letter-spacing: 0.03em;
-
+  text-align: center;
   margin-bottom: 12px;
 }
 
@@ -203,9 +214,15 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.test123 {
+  text-underline-position: under;
+  min-width: max-content;
+}
 .label-txt {
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
   letter-spacing: 0.03em;
 
   color: #757575;

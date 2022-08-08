@@ -20,10 +20,10 @@
     url(../images/section1/bagraund-sm.jpg);
 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 
-  padding: 120px 0;
+  // padding: 120px 0;
 }
 
 // ---МЕДІА ПІД 2Х МОНІТОРИ та під дівайси---
@@ -66,6 +66,7 @@
 
 @media screen and (min-width: 1200px) {
   .overlay {
+    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -106,15 +107,10 @@
   text-align: center;
   max-width: 360px;
   margin-bottom: 30px;
+  text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
-    font-weight: 900;
-    // font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--background-color);
 
     width: 696px;
     margin-left: auto;

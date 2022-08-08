@@ -1,13 +1,10 @@
 .peculiarities-list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 
   @media screen and (min-width: 768px) {
-    & .peculiarities-list__item + .peculiarities-list__item {
-      gap: 30px;
-    }
+    gap: 30px;
   }
 }
 

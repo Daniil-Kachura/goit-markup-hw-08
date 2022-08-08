@@ -4,25 +4,33 @@
   align-items: center;
   width: 100%;
 
+  @media screen and (min-width: 1200px) {
+    justify-content: baseline;
+    margin-left: auto;
+  }
+}
+.modal-form-footer {
+  width: 100%;
+
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-direction: column;
-    justify-content: baseline;
-    margin-left: auto;
+    width: auto;
+    align-items: normal;
   }
 }
 
 .sub-title {
   display: block;
   margin-bottom: 20px;
+
+  font-weight: 700;
   text-align: center;
-
-  font-size: 14px;
   text-transform: uppercase;
-
   color: var(--background-color);
 
   @media screen and (min-width: 1200px) {
@@ -32,8 +40,7 @@
 
 .mail-label {
   height: 50px;
-
-  width: 450px;
+  width: 100%;
   outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -43,8 +50,14 @@
 
   color: rgba(255, 255, 255, 0.6);
 
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
   &:focus {
     border-color: var(--hover-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {

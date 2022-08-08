@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <!-- Боди -->
+
   <body>
     <header class="header">
       <div class="container">
@@ -25,18 +26,7 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo__end">Studio</span></a
           >
-          <button class="mobile-nav" type="button">
-            <svg class="mobile-nav__icon" width="40px" height="40px">
-              <use
-                class="mobile-nav__icon-menu"
-                href="./images/sprite.svg#mobile-icon"
-              ></use>
-              <use
-                class="mobile-nav__icon-close"
-                href="./images/sprite.svg#mobile-icon-x"
-              ></use>
-            </svg>
-          </button>
+
           <nav class="header__navigation">
             <ul class="navigavion__list">
               <li class="navigavion__item">
@@ -56,6 +46,71 @@
               </li>
             </ul>
           </nav>
+          <button type="button" class="mobile-nav" data-menu-open>
+            <svg class="open-mobile-menu-btn__icon" width="40" height="40">
+              <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+              <button
+                type="button"
+                class="mobile-menu__close-btn"
+                data-menu-close
+              >
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                  <use
+                    class="mobile-nav__icon-close"
+                    href="./images/sprite.svg#mobile-icon-x"
+                  ></use>
+                </svg>
+              </button>
+              <div class="mobile-navigation">
+                <ul class="mobile-nav__list">
+                  <li class="mobile-nav__item">
+                    <a
+                      class="mobile-nav__link mobile-nav__link_active"
+                      href="./index.html"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">Контакты</a>
+                  </li>
+
+                  <li class="mobile-nav__item__contact">
+                    <a class="mobile-nav__item__contact__tel" href="#"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mobile-nav__item__mail">
+                    <a href="#">info@devstudio.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile-navigation__social">
+                <ul class="mobile-nav__list-social">
+                  <li class="mobile-nav__item-social">
+                    <a href="#">Instagram</a>
+                  </li>
+                  <li class="mobile-nav__item-social">
+                    <a href="#">Twitter</a>
+                  </li>
+                  <li class="mobile-nav__item-social">
+                    <a href="#">Facebook</a>
+                  </li>
+                  <li class="mobile-nav__item-social">
+                    <a href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <ul class="contacts">
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -156,6 +211,7 @@
                     ./images/section2/box-1-lg@2x.webp 2x
                   "
                   type="image/webp"
+                  media="(min-width: 1200px)"
                 />
 
                 <!-- <source
@@ -187,7 +243,9 @@
                     ./images/section2/box-2-lg.webp    1x,
                     ./images/section2/box-2-lg@2x.webp 2x
                   "
-                  type="image/webp" />
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
 
                 <!-- <source
                   srcset=" "
@@ -199,14 +257,16 @@
                     ./images/section2/box-2-lg.jpg    1x,
                     ./images/section2/box-2-lg@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <img
                   src="./images/section2/box-2-lg.jpg"
                   alt="web-ui-designers-are-developing"
                   width="370"
                   class="photo"
-              /></picture>
+                />
+              </picture>
               <p class="work-text">Мобильные приложения</p>
             </li>
             <li class="work-item">
@@ -216,7 +276,9 @@
                     ./images/section2/box-3-lg.webp    1x,
                     ./images/section2/box-3-lg@2x.webp 2x
                   "
-                  type="image/webp" />
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
 
                 <!-- <source
                   srcset=" "
@@ -228,14 +290,16 @@
                     ./images/section2/box-3-lg.jpg    1x,
                     ./images/section2/box-3-lg@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <img
                   src="./images/section2/box-3-lg.jpg"
                   alt="creative-artist-web-design"
                   width="370"
                   class="photo"
-              /></picture>
+                />
+              </picture>
               <p class="work-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -254,14 +318,16 @@
                     ./images/section3/team-1-lg@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
                     ./images/section3/team-1-lg.jpg    1x,
                     ./images/section3/team-1-lg@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
@@ -269,13 +335,15 @@
                     ./images/section3/team-1-md@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-1-md.jpg    1x,
                     ./images/section3/team-1-md@2x.jpg 2x
                   "
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
 
                 <source
                   srcset="
@@ -283,20 +351,23 @@
                     ./images/section3/team-1-sm@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 480px)" />
+                  media="(min-width: 480px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-1-sm.jpg    1x,
                     ./images/section3/team-1-sm@2x.jpg 2x
                   "
-                  media="(max-width: 480px)" />
+                  media="(max-width: 480px)"
+                />
 
                 <img
                   src="./images/section3/team-1-sm.jpg"
                   alt="Игорь Демьяненко"
                   width="270"
                   class="personal"
-              /></picture>
+                />
+              </picture>
               <h3 class="name-team">Игорь Демьяненко</h3>
               <p class="position-team">Product Designer</p>
               <ul class="social-list">
@@ -358,14 +429,16 @@
                     ./images/section3/team-2-lg@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
                     ./images/section3/team-2-lg.jpg    1x,
                     ./images/section3/team-2-lg@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
@@ -373,13 +446,15 @@
                     ./images/section3/team-2-md@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-2-md.jpg    1x,
                     ./images/section3/team-2-md@2x.jpg 2x
                   "
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
 
                 <source
                   srcset="
@@ -387,20 +462,23 @@
                     ./images/section3/team-2-sm@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 480px)" />
+                  media="(min-width: 480px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-2-sm.jpg    1x,
                     ./images/section3/team-2-sm@2x.jpg 2x
                   "
-                  media="(max-width: 480px)" />
+                  media="(max-width: 480px)"
+                />
 
                 <img
                   src="./images/section3/team-2-sm.jpg"
                   alt="Ольга Репина"
                   width="270"
                   class="personal"
-              /></picture>
+                />
+              </picture>
               <h3 class="name-team">Ольга Репина</h3>
               <p class="position-team">Frontend Developer</p>
               <ul class="social-list">
@@ -462,14 +540,16 @@
                     ./images/section3/team-3-lg@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
                     ./images/section3/team-3-lg.jpg    1x,
                     ./images/section3/team-3-lg@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
@@ -477,13 +557,15 @@
                     ./images/section3/team-3-md@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-3-md.jpg    1x,
                     ./images/section3/team-3-md@2x.jpg 2x
                   "
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
 
                 <source
                   srcset="
@@ -491,20 +573,23 @@
                     ./images/section3/team-3-sm@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 480px)" />
+                  media="(min-width: 480px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-3-sm.jpg    1x,
                     ./images/section3/team-3-sm@2x.jpg 2x
                   "
-                  media="(max-width: 480px)" />
+                  media="(max-width: 480px)"
+                />
 
                 <img
                   src="./images/section3/team-3-sm.jpg"
                   alt="Николай Тарасов"
                   width="270"
                   class="personal"
-              /></picture>
+                />
+              </picture>
               <h3 class="name-team">Николай Тарасов</h3>
               <p class="position-team">Marketing</p>
               <ul class="social-list">
@@ -566,14 +651,16 @@
                     ./images/section3/team-4-lg@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
                     ./images/section3/team-4-lg.jpg    1x,
                     ./images/section3/team-4-lg@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                  media="(min-width: 1200px)"
+                />
 
                 <source
                   srcset="
@@ -581,13 +668,15 @@
                     ./images/section3/team-4-md@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-4-md.jpg    1x,
                     ./images/section3/team-4-md@2x.jpg 2x
                   "
-                  media="(min-width: 768px)" />
+                  media="(min-width: 768px)"
+                />
 
                 <source
                   srcset="
@@ -595,20 +684,23 @@
                     ./images/section3/team-4-sm@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(min-width: 480px)" />
+                  media="(min-width: 480px)"
+                />
                 <source
                   srcset="
                     ./images/section3/team-4-sm.jpg    1x,
                     ./images/section3/team-4-sm@2x.jpg 2x
                   "
-                  media="(max-width: 480px)" />
+                  media="(max-width: 480px)"
+                />
 
                 <img
                   src="./images/section3/team-4-sm.jpg"
                   alt="Михаил Ермаков"
                   width="270"
                   class="personal"
-              /></picture>
+                />
+              </picture>
               <h3 class="name-team">Михаил Ермаков</h3>
               <p class="position-team">UI Designer</p>
               <ul class="social-list">
@@ -824,7 +916,7 @@
             </ul>
           </div>
           <div class="test3">
-            <form>
+            <form class="modal-form-footer">
               <label class="sub-title">Подпишитесь на рассылку</label>
               <div class="box-footer">
                 <label class="label-footer">
@@ -835,7 +927,6 @@
                     placeholder="E-mail"
                   />
                 </label>
-
                 <button class="btn-footer" type="submit">
                   <span class="text-btn-footer">Подписаться</span>
                   <svg class="btn-footer-logo" width="24px" height="24px">
@@ -849,7 +940,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
 
@@ -920,8 +1011,10 @@
             <svg class="icon-check" width="16px" height="15">
               <use href="./images/sprite.svg#icon-icon-check"></use>
             </svg>
-            <span class="label-txt"> Соглашаюсь с рассылкой и принимаю </span>
-            <a class="licence-link" href="#">Условия договора</a>
+            <div class="test123">
+              <span class="label-txt"> Соглашаюсь с рассылкой и принимаю </span>
+              <a class="licence-link" href="#">Условия договора</a>
+            </div>
           </label>
 
           <div class="form-btn">
@@ -934,11 +1027,11 @@
           </svg>
         </button>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
     <!-- Скрипт для просмотра данных отправки в "console": -->
-    <script>
+    <!-- <script>
       (() => {
         document
           .querySelector(".js-speaker-form")
@@ -951,6 +1044,8 @@
             e.currentTarget.reset();
           });
       })();
-    </script>
+    </script> -->
+    <!-- Скрипт для моб. меню -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
