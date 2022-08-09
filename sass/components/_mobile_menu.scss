@@ -96,6 +96,10 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  @media screen and (max-width: 360px) {
+    font-size: 24px;
+  }
 }
 
 .mobile-nav__item__mail {
@@ -106,9 +110,14 @@
   color: #757575;
 
   margin-bottom: 64px;
+
+  @media screen and (max-width: 360px) {
+    font-size: 18px;
+  }
 }
 .mobile-nav__list-social {
   display: flex;
+  flex-wrap: wrap;
 }
 .mobile-nav__item-social {
   font-weight: 500;
@@ -117,6 +126,10 @@
   letter-spacing: 0.02em;
   color: #2196f3;
   padding-right: 10px;
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 
   &:not(:first-child) {
     padding-left: 10px;

@@ -159,8 +159,6 @@ textarea {
   color: var(--mail-tel-color);
   cursor: pointer;
   user-select: none;
-  text-underline-position: under;
-  min-width: max-content;
 }
 
 .chek {
@@ -216,11 +214,9 @@ textarea {
 }
 
 .label-txt {
-  display: flex;
-  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.7;
 
   letter-spacing: 0.03em;
 
@@ -229,7 +225,7 @@ textarea {
 
 .licence-link {
   text-decoration: underline;
-
+  line-height: 1.7;
   color: var(--hover-color);
 
   transition-duration: 250ms;
