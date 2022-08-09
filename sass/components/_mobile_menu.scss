@@ -23,7 +23,13 @@
 
   .mobile-menu__container {
     position: relative;
-    padding: 48px 40px;
+    padding: 39px 40px;
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   .mobile-menu__close-btn {
