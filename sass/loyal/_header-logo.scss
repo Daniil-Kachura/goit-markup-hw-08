@@ -22,6 +22,19 @@
     }
   }
 }
+.mobile-menu__close-icon {
+  display: block;
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  .mobile-menu__close-icon:hover &,
+  .mobile-menu__close-icon:focus & {
+    fill: var(--hover-color);
+  }
+}
 @media screen and (min-width: 768px) {
   .mobile-nav {
     display: none;
