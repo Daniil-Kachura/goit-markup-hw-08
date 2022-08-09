@@ -1453,6 +1453,11 @@ textarea::placeholder {
   margin-right: 10px;
 }
 @media screen and (max-width: 480px) {
+  .mobile-nav__item-social:not(:last-child) {
+    border: 0;
+  }
+}
+@media screen and (max-width: 480px) {
   .mobile-nav__item-social {
     font-size: 14px;
   }
