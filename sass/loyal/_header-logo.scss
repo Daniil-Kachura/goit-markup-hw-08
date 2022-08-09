@@ -22,19 +22,19 @@
     }
   }
 }
-.mobile-menu__close-icon {
-  display: block;
-  fill: currentColor;
-
-  transition-property: fill;
+.mobile-nav {
+  background-color: transparent;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-
-  .mobile-menu__close-icon:hover &,
-  .mobile-menu__close-icon:focus & {
-    fill: var(--hover-color);
-  }
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mobile-nav:hover,
+.mobile-nav:focus {
+  fill: var(--hover-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 768px) {
   .mobile-nav {
     display: none;
