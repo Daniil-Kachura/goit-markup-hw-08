@@ -1339,6 +1339,7 @@ textarea::placeholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1402,7 +1403,7 @@ textarea::placeholder {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .mobile-nav__item__contact__tel {
     font-size: 24px;
   }
@@ -1416,7 +1417,7 @@ textarea::placeholder {
   color: #757575;
   margin-bottom: 64px;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .mobile-nav__item__mail {
     font-size: 18px;
   }
